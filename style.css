@@ -1,0 +1,319 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Playball';
+}
+.header{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   border: 100%;
+}
+nav{
+   display: flex;
+   padding: 2% 6%;
+   justify-content: space-between;
+   align-items: center;
+   border: 100%;
+   border-color: red ;
+}
+nav img{
+   width: 150px;
+}
+.nav-links{
+   flex: 1;
+   text-align: right;
+   font-family: 'Playball',cursive;
+}
+.nav-links ul li{
+   list-style: none;
+   display: inline-block;
+   padding: 8px 12px;
+   position: relative;
+   font-family: 'Playball',cursive;
+   border: 100%;
+}
+.nav-links ul li a{
+   color: #fff;
+   text-decoration:none;
+   font-size:13px;
+   font-family: 'Playball',cursive;
+}
+.nav-links ul li::after{
+   content: "";
+   width:0%;
+   height:2px;
+   background:#f44336;
+   display: block;
+   margin:auto;
+   transition:0.5s;
+}
+.nav-links ul li:hover::after{
+   width: 100%;
+}
+.text-box{
+   width: 90%;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.text-box h1{
+   font-size: 62px;
+   font-family: 'Playball', cursive;
+}
+.text-box p{
+   margin: 10px 0 40px;
+   font-size: 14px;
+   color: #fff;
+}
+.hero-btn{
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   border: 1px solid #fff;
+   padding: 12px 34px;
+   font-size: 13px;
+   background: transparent;
+   position: relative;
+   cursor: pointer;
+   font-family: "Playball",cursive;
+}
+.hero-btn:hover{
+   border: 1px solid #f44336;
+   background: #f44336;
+   transition: 1s;
+}
+
+nav .fa{
+   display: none;
+}
+
+@media(max-width: 700px){
+   .text-box h1{
+       font-size: 20px;
+   }
+   .nav-links ul li{
+       display: block;
+       font-family:'Playball', cursive;
+   }
+   .nav-links{
+       position: fixed;
+       background: #777777;
+       height: 100vh;
+       width: 200px;
+       top: 0;
+       right: -200px;
+       text-align: left;
+       z-index: 2;
+       transition: 0.5s;
+      
+   }
+   nav .fa{
+       display: block;
+       color: #fff;
+       margin: 10px;
+       font-size: 22px;
+       cursor: pointer;
+   }
+   .nav-links ul{
+       padding: 30px;
+   }
+}
+
+
+
+
+/*--------footer-------*/
+
+.footer{
+   width: 100%;
+   text-align: center;;
+   padding: 30px 0;
+}
+
+.footer h4{
+   margin-bottom: 25px;
+   margin-top: 20px;
+   font-weight: 600;
+}
+.icons .fa{
+   color: #f44336;
+   margin: 0 13px;
+   cursor: pointer;
+   padding: 18px 0;
+}
+.fa-heart-0{
+   color: #f44336;
+}
+
+/*---------- about us page ----------*/
+
+.sub-header1{
+   height: 50vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+   background-position: center;
+   background-size: cover;
+   text-align: center;
+   color: #fff;
+}
+.sub-header h1{
+   margin-top: 100px;
+}
+
+.about-us{
+   width: 80%;
+   margin: auto;
+   padding-top: 80px;
+   padding-bottom: 50px;
+}
+
+.about-col{
+   flex-basis: 48%;
+   padding: 30px 2px;
+}
+.about-col img{
+   width: 100%;
+}
+
+.about-col h1{
+   padding-top: 0;
+}
+.about-col p{
+   padding: 15px 0 25px;
+}
+
+.red-btn{
+   border: 1px solid #f44336 ;
+   background: transparent;
+   color: #f44336;
+}
+
+.red-btn:hover{
+   color: #fff;
+}
+
+/*---------- blog content -----------*/
+
+.blog-content{
+   width: 80%;
+   margin: auto;
+   padding: 60px 0;
+}
+.blog-left{
+   flex-basis: 65%;
+}
+.blog-left img{
+   width: 100%;
+}
+.blog-left h2{
+   color: #222;
+   font-weight: 600;
+   margin: 30px 0;
+}
+.blog-left p{
+   color: #999;
+   padding: 0;
+}
+
+
+.blog-right{
+   flex-basis: 32%;
+}
+.blog-right h3{
+   background: #f44336;
+   color: #fff;
+   padding: 7px 0;
+   font-size: 16px;
+   margin-bottom: 20px;
+}
+.blog-right div{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #555;
+   padding: 8px;
+   box-sizing: border-box;
+}
+
+.comment-box{
+   border: 1px solid #ccc;
+   margin: 50px 0;
+   padding: 10PX 20PX;
+}
+.comment-box h3{
+   text-align: left;
+}
+.comment-form input, .comment-form textarea{
+   width: 100%;
+   padding: 10px;
+   margin: 15px 0;
+   box-sizing: border-box;
+   border: none;
+   outline: none;
+   background: #f0f0f0;
+}
+.comment-form button{
+   margin: 10px 0;
+}
+
+@media(max-width:700px){
+   .sub-header h1{
+       font-size: 24px;
+   }
+}
+/*-------------lecturer page------------*/
+
+.sub-header{
+   height: 50vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/lecturer.jpg);
+   background-position: center;
+   background-size: cover;
+   text-align: center;
+   color: #fff;
+}
+.sub-header h1{
+   margin-top: 100px;
+}
+
+.about-us{
+   width: 80%;
+   margin: auto;
+   padding-top: 80px;
+   padding-bottom: 50px;
+}
+
+.about-col{
+   flex-basis: 48%;
+   padding: 30px 2px;
+}
+.about-col img{
+   width: 100%;
+}
+
+.about-col h1{
+   padding-top: 0;
+}
+.about-col p{
+   padding: 15px 0 25px;
+}
+
+.red-btn{
+   border: 1px solid #f44336 ;
+   background: transparent;
+   color: #f44336;
+}
+
+.red-btn:hover{
+   color: #fff;
+}
+.hod{
+   text-align: center;
+}
